@@ -21,6 +21,10 @@ I care about the details that make verification trustworthy: independent AXI cha
 
 Every repository includes synthesizable RTL, a complete UVM environment, constrained-random and directed stimulus, a scoreboard, functional coverage, SVA, a portable self-checking smoke test, verification results, and reproducible run commands for Cadence Xcelium.
 
+## Learning in public
+
+I also maintain the [SystemVerilog DV Learning Lab](https://github.com/ashishkommineni/systemverilog-dv-learning-lab): nine focused chapters that move from language fundamentals and OOP to constraints, concurrency, interfaces, assertions, coverage, a mini verification project, and interview practice. Each topic is kept small enough to run, inspect, and explain—not just copy.
+
 ## How I approach a block
 
 1. Turn the protocol or microarchitecture into an explicit behavioral contract.
