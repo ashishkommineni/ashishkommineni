@@ -27,6 +27,8 @@ I also maintain the [SystemVerilog DV Learning Lab](https://github.com/ashishkom
 
 The companion [UVM Verification Learning Series](https://github.com/ashishkommineni/uvm-verification-learning-series) follows one executable mini-bus environment from transaction and sequence through driver, monitor, active/passive agent, predictive scoreboard, coverage, and SVA. Focused examples cover factory and `config_db`, callbacks, virtual sequences, RAL, and 60 interview questions; the recorded portable regressions finish with zero UVM errors and fatals.
 
+The [7 Days of RTL](https://github.com/ashishkommineni/7-days-of-rtl) series is my shorter design track: a New York clock, round-robin arbiter, byte-enable register file, ready/valid skid buffer, CDC pulse synchronizer, signed pipelined MAC, and buffered 2×2 router. Every day pairs synthesizable RTL with a self-checking testbench, assertions, expected output, and an interview-ready explanation; the complete Verilator regression passes all seven projects.
+
 ## How I approach a block
 
 1. Turn the protocol or microarchitecture into an explicit behavioral contract.
