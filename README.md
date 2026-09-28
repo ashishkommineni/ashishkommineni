@@ -25,6 +25,8 @@ Every repository includes synthesizable RTL, a complete UVM environment, constra
 
 I also maintain the [SystemVerilog DV Learning Lab](https://github.com/ashishkommineni/systemverilog-dv-learning-lab): nine focused chapters that move from language fundamentals and OOP to constraints, concurrency, interfaces, assertions, coverage, a mini verification project, and interview practice. Each topic is kept small enough to run, inspect, and explain—not just copy.
 
+The companion [UVM Verification Learning Series](https://github.com/ashishkommineni/uvm-verification-learning-series) follows one executable mini-bus environment from transaction and sequence through driver, monitor, active/passive agent, predictive scoreboard, coverage, and SVA. Focused examples cover factory and `config_db`, callbacks, virtual sequences, RAL, and 60 interview questions; the recorded portable regressions finish with zero UVM errors and fatals.
+
 ## How I approach a block
 
 1. Turn the protocol or microarchitecture into an explicit behavioral contract.
