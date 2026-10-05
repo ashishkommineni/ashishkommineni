@@ -75,3 +75,7 @@ I use these repositories to practise explaining not only the syntax, but also ob
 ## Connect
 
 [LinkedIn](https://www.linkedin.com/in/ashish-kommineni) · [Email](mailto:ashishkommineni7@gmail.com)
+
+## License
+
+This profile repository is released under the [MIT License](LICENSE).
