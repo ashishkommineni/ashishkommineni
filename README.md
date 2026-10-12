@@ -31,7 +31,7 @@ Each repository contains synthesizable RTL, UVM source, SVA, functional coverage
 
 ## Learning in public
 
-- [SystemVerilog DV Learning Lab](https://github.com/ashishkommineni/systemverilog-dv-learning-lab) — nine example-first chapters covering language fundamentals, arrays, OOP, constraints, concurrency, interfaces, assertions, coverage, and a complete non-UVM mini environment.
+- [14-Day Verilog/RTL Concepts and Interviews](https://github.com/ashishkommineni/7-days-of-rtl/tree/main/14-days-of-verilog-rtl) — in-progress structured learning series; current published examples cover timers, FSM controllers, and a signed MAC. Each includes RTL, self-checking tests, assertions, and documentation. New-series CI is not yet independently confirmed as passing.\n- [SystemVerilog DV Learning Lab](https://github.com/ashishkommineni/systemverilog-dv-learning-lab) — nine example-first chapters covering language fundamentals, arrays, OOP, constraints, concurrency, interfaces, assertions, coverage, and a complete non-UVM mini environment.
 - [UVM Verification Learning Series](https://github.com/ashishkommineni/uvm-verification-learning-series) — twenty-two lessons built around one executable mini-bus environment, with focused examples for factory, configuration, TLM, callbacks, virtual sequences, RAL, phasing, reset, and 80 interview questions.
 
 I use these repositories to practise explaining not only the syntax, but also object ownership, transaction flow, sampling, race avoidance, scoreboard independence, and end-of-test correctness.
