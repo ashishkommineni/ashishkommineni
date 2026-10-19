@@ -17,7 +17,7 @@ or an unexecuted command as proof.
 
 | Project | Engineering focus | Verification evidence |
 |---|---|---|
-| [14 Days of RTL](https://github.com/ashishkommineni/14-days-of-rtl) | Fourteen synthesizable blocks covering arbitration, flow control, CDC, ECC, clock gating, prediction, streaming conversion, and DMA | Self-checking testbenches, SVA, functional coverage intent, expected outputs, and a passing fourteen-project Verilator regression |
+| [14 Days of RTL](https://github.com/ashishkommineni/14-days-of-rtl) | Fourteen synthesizable blocks covering arbitration, flow control, CDC, ECC, clock gating, prediction, streaming conversion, and DMA | Self-checking testbenches, SVA, coverage gates, a [completion matrix](https://github.com/ashishkommineni/14-days-of-rtl/blob/main/docs/completion_matrix.md), and a [dated 14/14 regression report](https://github.com/ashishkommineni/14-days-of-rtl/blob/main/docs/verification_report.md) |
 | [AXI4-Lite Memory Slave](https://github.com/ashishkommineni/axi4-lite-uvm-verification) | Independent AW/W acceptance, byte strobes, decode responses, and channel backpressure | Reusable UVM agent, monitor-reconstructed transfers, byte-aware scoreboard, channel-skew coverage, stable-VALID assertions, and recorded smoke results |
 | [Asynchronous FIFO](https://github.com/ashishkommineni/asynchronous-fifo-uvm-verification) | Gray-coded pointers, two-flop synchronizers, and unrelated read/write clocks | Dual UVM agents, ordering scoreboard, boundary assertions, reset/error scenarios, and documented CDC limitations |
 | [VLSI Interview Preparation](https://github.com/ashishkommineni/vlsi-interview-preparation) | Fourteen focused study days spanning Digital, RTL, SystemVerilog, UVM, SVA, protocols, CDC, and FIFOs | 140 reviewed questions with detailed answers, examples, common traps, and natural spoken-answer versions |
@@ -41,6 +41,8 @@ The AXI4-Lite and asynchronous-FIFO repositories are highlighted above. Across
 all eight protocol/FIFO projects, the common structure includes synthesizable
 RTL, UVM components, constrained stimulus, SVA, functional coverage, a
 self-checking portable smoke test, verification documentation, and MIT licensing.
+The latest `main`-branch portable smoke workflow is green in each repository;
+those runs check RTL/SVA portability and do not claim a full Xcelium UVM run.
 
 ## Learning in public
 
