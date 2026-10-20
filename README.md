@@ -17,14 +17,17 @@ or an unexecuted command as proof.
 
 | Project | Engineering focus | Verification evidence |
 |---|---|---|
+| [RISC-V Reliable Edge Sensor Hub SoC](https://github.com/ashishkommineni/riscv-edge-sensor-hub-soc) | SPI sensor CDC, DMA, SECDED SRAM, signed INT8 acceleration, interrupts, firmware, and UART evidence | Independent firmware/ECC model, self-checking end-to-end RTL, SVA, contention test, UVM source, waveform artifacts, and green Verilator CI |
+| [RV32I Core from Scratch](https://github.com/ashishkommineni/rv32i-core-from-scratch) | Original multicycle RV32I implementation with backpressured instruction/data buses and precise terminal faults | 261-word full base-integer program, eight directed trap tests, retirement scoreboard, SVA, coverage, UVM source, and green Verilator CI |
 | [14 Days of RTL](https://github.com/ashishkommineni/14-days-of-rtl) | Fourteen synthesizable blocks covering arbitration, flow control, CDC, ECC, clock gating, prediction, streaming conversion, and DMA | Self-checking testbenches, SVA, coverage gates, a [completion matrix](https://github.com/ashishkommineni/14-days-of-rtl/blob/main/docs/completion_matrix.md), and a [dated 14/14 regression report](https://github.com/ashishkommineni/14-days-of-rtl/blob/main/docs/verification_report.md) |
 | [AXI4-Lite Memory Slave](https://github.com/ashishkommineni/axi4-lite-uvm-verification) | Independent AW/W acceptance, byte strobes, decode responses, and channel backpressure | Reusable UVM agent, monitor-reconstructed transfers, byte-aware scoreboard, channel-skew coverage, stable-VALID assertions, and recorded smoke results |
 | [Asynchronous FIFO](https://github.com/ashishkommineni/asynchronous-fifo-uvm-verification) | Gray-coded pointers, two-flop synchronizers, and unrelated read/write clocks | Dual UVM agents, ordering scoreboard, boundary assertions, reset/error scenarios, and documented CDC limitations |
 | [VLSI Interview Preparation](https://github.com/ashishkommineni/vlsi-interview-preparation) | Fourteen focused study days spanning Digital, RTL, SystemVerilog, UVM, SVA, protocols, CDC, and FIFOs | 140 reviewed questions with detailed answers, examples, common traps, and natural spoken-answer versions |
 
 These are the projects I would start with in a technical discussion. Together
-they show RTL reasoning, protocol behavior, clock-domain crossing, reusable
-verification structure, debugging, and reproducible evidence.
+they show system integration, CPU microarchitecture, RTL reasoning, protocol
+behavior, clock-domain crossing, reusable verification structure, debugging,
+and reproducible evidence.
 
 ## Protocol and IP verification
 
@@ -79,8 +82,10 @@ those runs check RTL/SVA portability and do not claim a full Xcelium UVM run.
   the resulting coverage evidence.
 - Building a low-power Radix-4 Booth MAC with a Modified Kogge-Stone adder for
   FPGA implementation and measured synthesis results.
-- Developing one integrated RTL/UVM subsystem that combines a control plane,
-  streaming datapath, data movement, interrupts, and a CDC boundary.
+- Extending the RISC-V sensor hub with architectural interrupt handling,
+  configurable accelerator weights, formal CDC properties, and synthesis/STA evidence.
+- Evolving the scratch RV32I core toward machine CSRs, interrupt entry/return,
+  RVFI-style tracing, and formal instruction checks.
 - Adding formal properties and CDC/RDC evidence where exhaustive or static
   checks provide stronger confidence than simulation alone.
 
